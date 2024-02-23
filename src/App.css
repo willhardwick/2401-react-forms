@@ -40,3 +40,113 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+  text-align: center;
+}
+
+.auth-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 1rem;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label input {
+  margin-left: 1.25rem;
+}
+
+.form-label {
+  margin-bottom: 1rem;
+}
+
+.form-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.form-button {
+  background-color: #646cff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #535bf2;
+}
+
+.error-message {
+  color: red;
+  animation: errorColorTransition 5s infinite;
+}
+
+@keyframes errorColorTransition {
+  14.28% {color: red; }
+  28.57% {color: orangered; }
+  42.85% {color: orange; }
+  57.13% {color: gold; }
+  71.41% {color: orange; }
+  80% {color: orangered; }
+  100% {color: red; }
+}
+
+.success-message {
+  color: green;
+  animation: successColorTransition 5s infinite;
+}
+
+@keyframes successColorTransition {
+  14.28% {color: green; }
+  28.57% {color: rgb(0, 128, 96); }
+  42.85% {color: rgb(0, 107, 128); }
+  57.13% {color: rgb(0, 136, 255); }
+  71.41% {color: rgb(0, 107, 128); }
+  80% {color: rgb(0, 128, 96); }
+  100% {color: green; }
+}
+
+.auth-button {
+  background-color: #646cff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #535bf2;
+}
