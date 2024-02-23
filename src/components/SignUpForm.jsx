@@ -17,7 +17,7 @@ export default function SignUpForm({ setToken }) {
                 timeoutId = setTimeout(() => {
                     setError('');
                     setFormSubmitted(false);
-                }, 5000);
+                }, 180000);
             } else {
                 setError('');
             }
@@ -31,7 +31,7 @@ export default function SignUpForm({ setToken }) {
         setFormSubmitted(true);
 
         if (!username || !password) {
-            setError('Please sign up before authenticating');
+            setError('No username, no password, no token');
             return;
         }
 

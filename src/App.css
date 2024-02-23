@@ -110,7 +110,7 @@ label input {
 
 .error-message {
   color: red;
-  animation: errorColorTransition 5s infinite;
+  animation: errorColorTransition 8s infinite;
 }
 
 @keyframes errorColorTransition {
