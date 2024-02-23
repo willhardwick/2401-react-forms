@@ -24,15 +24,17 @@ export default function SignUpForm({ setToken }) {
         }
         return () => clearTimeout(timeoutId);
     }, [username, formSubmitted]);
-    
-    
-    
-
 
 
     async function handleSubmit(event) {
         event.preventDefault();
         setFormSubmitted(true);
+
+        if (!username || !password) {
+            setError('Please sign up before authenticating');
+            return;
+        }
+
         try {
             const response = await axios.post(BASE_URL+'signup');
             console.log(response.data);
@@ -51,7 +53,6 @@ export default function SignUpForm({ setToken }) {
         }
     }
     
-
     return (
         <div className="form-container">
             <h2>Sign up</h2>

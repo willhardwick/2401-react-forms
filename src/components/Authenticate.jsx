@@ -21,6 +21,7 @@ export default function Authenticate({ token }) {
             console.error(error);
             setError('Please sign up before authenticating');
         }
+
     }
     
     return (
