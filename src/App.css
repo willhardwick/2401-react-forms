@@ -60,7 +60,7 @@ body {
   border-radius: 8px;
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 90%;
+  width: 20rem;
   text-align: center;
 }
 
@@ -70,7 +70,8 @@ body {
   border-radius: 8px;
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 90%;
+  width: 20rem;
+
 }
 
 .form {
