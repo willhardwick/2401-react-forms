@@ -12,10 +12,15 @@ export default function Authenticate({ token }) {
             const response = await axios.get(BASE_URL+'Authenticate', {
                 headers: {
                     'Content-Type': 'application/json',
-                    Authorization: `Bearer ${token}`,
+                    'Authorization': `Bearer ${token}`,
                 }
             });
-            setSuccessMessage(response.data.message); // axios formatting
+            
+            if (response.data.message.startsWith('jwt')) {
+                setSuccessMessage('Invalid, please sign up again.')
+            } else {
+            setSuccessMessage(response.data.message);
+        } // axios formatting
 
         } catch (error) {
             console.error(error);

@@ -37,7 +37,6 @@ export default function SignUpForm({ setToken }) {
 
         try {
             const response = await axios.post(BASE_URL+'signup');
-            console.log(response.data);
             setToken(response.data.token); // axios formatting
             clearForm();
 
